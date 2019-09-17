@@ -1,18 +1,18 @@
 {
 
-  "description": "Adds a solid red border to all webpages matching mozilla.org. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#borderify",
+  "description": "Tries to remove all plus content on http://heise.de/",
   "manifest_version": 2,
-  "name": "Borderify",
-  "version": "1.0",
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/borderify",
+  "name": "Heise Plus Remover",
+  "version": "0.1",
+  "homepage_url": "https://github.com/juppin/firefox-addon_heise-plus-remover",
   "icons": {
     "48": "icons/border-48.png"
   },
 
   "content_scripts": [
     {
-      "matches": ["*://*.mozilla.org/*"],
-      "js": ["borderify.js"]
+      "matches": ["*://*.heise.de/*"],
+      "js": ["remove_content.js"]
     }
   ]
 
