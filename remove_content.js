@@ -28,6 +28,7 @@ function ready(fn) {
 }
 
 ready(function() {
-    var classNames = 'heiseplus-logo-small'
-    removeArticleWhichContainsElementWithClassName(classNames);
+    //var classNames = 'heiseplus-logo-small';
+    var classNames = 'a-article-meta__item--heiseplus';
+removeArticleWhichContainsElementWithClassName(classNames);
 });
